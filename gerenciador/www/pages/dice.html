@@ -1,0 +1,29 @@
+<ion-view title="Dice" style="text-align:center" id="dice">
+    <ion-content padding="true" class="has-header">
+        <h1 style="color:#000000;text-align:center;" class=" ">ROLL THE DICE!</h1>
+        <div class="spacer" style="width: 299.831px; height: 61.9906px;"></div>
+        <button class="button icon button-positive ion-wand col text-center" ng-click="roll6()"> 6 lados</button>
+        <div class="spacer" style="width: 299.831px; height: 61.9906px;"></div>
+        <button class="button icon button-positive ion-wand col text-center" ng-click="roll20()"> 20 lados</button>
+        <div class="spacer" style="width: 299.831px; height: 61.9906px;"></div>
+        <button class="button icon button-positive ion-wand col text-center" ng-click="increaseLuck()"> + sorte</button>
+        <div class="spacer" style="width: 299.831px; height: 61.9906px;"></div>
+        <button class="button icon button-positive ion-wand col text-center" ng-click="resetLuck()"> reset sorte</button>
+        <div class="spacer" style="width: 299.831px; height: 61.9906px;"></div>
+        <h1 class="luck" style="text-align:center;">Sorte: {{luck}}</h1>
+<!--
+        <div class="spacer" style="width: 299.831px; height: 61.9906px;"></div>
+
+        <div class="col text-center">
+        <div class="button">
+          <button class="button icon button-positive ion-wand" ng-click="roll6()"> 6 lados</button>
+        </div>
+
+        <div class="button"ng-submit="roll20()">
+          <button type="button" class="button icon button-positive ion-wand" ng-submit="roll20()"> 20 lados</button>
+        </div>
+
+      </div>
+-->
+    </ion-content>
+</ion-view>

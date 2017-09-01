@@ -30,7 +30,26 @@ angular.module('gerenciador.routes',['gerenciador.controller'])
             views: {
               'menuContent': {
                 templateUrl: 'pages/creation.html',
-                controller: 'DBController'
+                controller: 'AddClienteCtrl'
+              }
+            }
+          })
+          .state('gerenciador.calculadora',{
+            url:'/calculadora',
+            views:{
+              'menuContent': {
+                templateUrl: 'pages/calculadora.html',
+                controller: 'CalculadoraCtrl'
+              }
+            }
+          })
+
+          .state('gerenciador.clientes',{
+            url:'/clientes',
+            views:{
+              'menuContent': {
+                templateUrl: 'pages/allClients.html',
+                controller: 'AddClienteCtrl'
               }
             }
           })

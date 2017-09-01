@@ -1,8 +1,24 @@
 <ion-view title="Creation" style="text-align:center" id="creation">
   <ion-content padding="true" class="has-header">
+    <form ng-submit="salvar(cliente)">
+      <div class="list list-inset">
+        <label class="item item-input">
+            <span class="input-label">Digite o nome</span>
+            <input type="text" placeholder="Nome" maxlength="150" ng-model="cliente.nome">
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Endereço</span>
+            <textarea placeholder="Digite dicas sobre a localidade" name="pageTextInput" maxlength="500" rows="4" cols="10" ng-model="cliente.endereco"></textarea>
+        </label>
+        <button type="submit" class="button button-block button-positive">
+              Submit
+          </button>
+          <br><br>
+      </div>
+    </form>
     <div class="spacer" style="width: 299.831px; height: 61.9906px;"></div>
     <button class="button icon button-positive ion-wand col text-center" ng-click="teste('whatever')"> Insert</button>
     <div class="spacer" style="width: 299.831px; height: 61.9906px;"></div>
-    <button class="button icon button-positive ion-wand col text-center" > Select</button>
+    <button class="button icon button-positive ion-wand col text-center" ng-click="select()"> Select</button>
   </ion-content>
 </ion-view>

@@ -1,0 +1,17 @@
+<ion-view title="Calculadora" style="text-align:center" id="calculadora">
+  <ion-content padding="true" class="has-header">
+    <div class="item item-button-right" ng-repeat="produto in produtos">
+            {{produto.nome}}
+            <div class="buttons">
+                <button class="button button-positive" ng-click="plusOne($index)">
+                    <i class="icon icon ion-plus"></i>
+                </button>
+                &nbsp&nbsp     {{produto.qtd}}     &nbsp&nbsp
+                <button class="button button-assertive" ng-click="minusOne($index)">
+                    <i class="icon icon ion-minus"></i>
+                </button>
+            </div>
+    </div>
+    <h1>{{somaTotal}}</h1>
+  </ion-content>
+</ion-view>
